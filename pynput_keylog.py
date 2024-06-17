@@ -33,6 +33,6 @@ signal.signal(signal.SIGINT, signal_handler)
 # Start the hook
 hookman.start()
 
-# Wait for the hook to be cancelled
-while hookman.is_running():
+# Keep the hook running indefinitely
+while True:
     time.sleep(1)
