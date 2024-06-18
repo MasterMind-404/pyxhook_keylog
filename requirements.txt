@@ -1,3 +1,2 @@
 pyxhook
-signal
 keyboard
