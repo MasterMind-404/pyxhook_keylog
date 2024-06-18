@@ -6,6 +6,8 @@
 
 # INSTALLATION
   1. Clone it: `git clone https://github.com/MasterMind-404/pyxhook_keylog.git`
-  2. Requirements: `pip install -r requiremets.txt`
-  3. Run it: `python pyxhook_keylog.py`
-  4. Usage: Type some keystrokes then press Control(ctrl) + C for Keyboard          interrupt.
+  2. Change Directory: `cd pyxhook_keylog`
+  3. List the Items: `ls`
+  4. Requirements: `pip install -r requiremets.txt`
+  5. Run it: `python pyxhook_keylog.py`
+  6. Usage: Type some keystrokes then press Control(ctrl) + C for Keyboard          interrupt.
